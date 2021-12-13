@@ -6,7 +6,7 @@
 # find_possible_combinations(dictionary, target) #=> []
 def find_possible_combinations(dictionary, target)
   resulting_arr = []
-  combinations = dictionary.repeated_combination(target.size)
+  combinations = dictionary.repeated_permutation(target.size)
   combinations.each do |combination|
     # puts combination
     resulting_arr.push(combination) if combination.join == target
